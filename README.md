@@ -23,7 +23,7 @@ This is a full-stack project that helps users pick the **perfect stadium seat** 
 
 ## 🧩 How to run
 
-React app to support match audience experience:
+React app to support audience experience:
 
 - clone repo
 
