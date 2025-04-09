@@ -25,6 +25,8 @@ export default function StadiumSeatingApp() {
   const [answers, setAnswers] = useState({});
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [userRating, setUserRating] = useState(null);
+
 
   const handleAnswerChange = (id, value) => {
     setAnswers((prev) => ({ ...prev, [id]: value }));
@@ -35,7 +37,7 @@ export default function StadiumSeatingApp() {
     console.log("Submitted answers:", answers); // Log the data to console
 
     // Simulating a response with seat number 9
-    const seatNumber = [9];
+    const seatNumber = [112345];
 
     setResponse({ seat: seatNumber });
 
@@ -146,8 +148,35 @@ export default function StadiumSeatingApp() {
           <div className="response-container">
             <h2 className="response-text">Your Perfect Seat:</h2>
             <p className="response-text">Your perfect seat is {response.seat}!</p>
+
+            <div style={{ marginTop: "20px" }}>
+              <h3 className="response-text">How would you rate this recommendation?</h3>
+              <div style={{ fontSize: "24px" }}>
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <span
+                    key={star}
+                    onClick={() => setUserRating(star)}
+                    style={{
+                      cursor: "pointer",
+                      color: star <= userRating ? "#FFD700" : "#ccc",
+                      fontSize: "30px",
+                      marginRight: "5px"
+                    }}
+                  >
+                    ★
+                  </span>
+                ))}
+              </div>
+              {userRating && (
+                <p style={{ marginTop: "10px", fontStyle: "italic" }}>
+                  Thanks for rating this {userRating} star{userRating > 1 ? "s" : ""}!
+                </p>
+              )}
+            </div>
           </div>
         )}
+
+
       </div>
     </div>
   );
