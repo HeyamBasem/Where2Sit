@@ -15,9 +15,8 @@ This is a full-stack project that helps users pick the **perfect stadium seat** 
 
 ## 🖼️ Demo Screenshot
 
-![Seat Picker UI](
-<img width="1498" alt="Screenshot 2025-04-09 at 10 44 36 PM" src="https://github.com/user-attachments/assets/a3000bdf-85eb-4990-8ccd-8b6a3ed9ac00" />
-<img width="1509" alt="Screenshot 2025-04-09 at 10 44 26 PM" src="https://github.com/user-attachments/assets/162936a4-97a5-4584-bdc1-370b2f7d94aa" />)
+<img width="1506" alt="Screenshot 2025-04-24 at 8 06 19 PM" src="https://github.com/user-attachments/assets/85a63607-1f1d-4e80-a592-2ff527363417" />
+<img width="1508" alt="Screenshot 2025-04-24 at 8 06 28 PM" src="https://github.com/user-attachments/assets/d178612c-e448-44fc-8dd9-5baaf764d96e" />
 
 ---
 
